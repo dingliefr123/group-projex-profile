@@ -1,0 +1,110 @@
+.App {
+  display: flex;
+  font-family: sans-serif;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.App .left {
+  flex: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 3px;
+  background: rgb(247, 249, 251);
+}
+
+.App .left span {
+  display: inline-block;
+}
+
+.App .left .title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.App .left .down {
+  display: flex;
+  width: 100%;
+}
+
+.left .down .txt {
+  flex: unset;
+}
+
+.left .down .green-block {
+  flex: 1;
+  background: green;
+  margin: 5px;
+}
+
+img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  flex: 1;
+  max-height: 200px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 5px;
+}
+
+/*  list  */
+
+.list-ul {
+  display: flex;
+  margin: 5px 0;
+  padding: unset;
+}
+
+.list-ul li {
+  width: 30px;
+  height: 30px;
+  margin-right: 3px;
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.list-ul li.active img {
+  border: 1px solid blue;
+}
+
+.list-ul li:hover {
+  transform: translateY(-5px);
+}
+
+/*  Profile  */
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top .avatar {
+  flex: unset;
+  width: 80px;
+  height: 80px;
+}
+
+.top .profile {
+  flex: unset;
+  width: 300px;
+}
+
+.top .profile .name {
+  font-weight: bold;
+}
+
+.top .profile .post-comp {
+  color: green;
+}
